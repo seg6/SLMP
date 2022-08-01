@@ -1,0 +1,37 @@
+name: .NET
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Publish
+      run: dotnet publish SLMP\SLMP.csproj -c Release -o build_folder && dotnet publish SLMPHealthCheck\SLMPHealthCheck.csproj -c Release -o build_folder
+      
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Release
+        path: build_folder/**
+        if-no-files-found: error
