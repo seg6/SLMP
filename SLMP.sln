@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLMP", "SLMP\SLMP.csproj", "{E9028C14-6FAF-4DDB-8719-48796B559759}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLMP.MockServer", "SLMP.MockServer\SLMP.MockServer.csproj", "{B1234567-89AB-CDEF-0123-456789ABCDEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLMP.Examples", "SLMP.Examples\SLMP.Examples.csproj", "{C2345678-89AB-CDEF-0123-456789ABCDEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9028C14-6FAF-4DDB-8719-48796B559759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9028C14-6FAF-4DDB-8719-48796B559759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9028C14-6FAF-4DDB-8719-48796B559759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9028C14-6FAF-4DDB-8719-48796B559759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1234567-89AB-CDEF-0123-456789ABCDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1234567-89AB-CDEF-0123-456789ABCDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1234567-89AB-CDEF-0123-456789ABCDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1234567-89AB-CDEF-0123-456789ABCDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2345678-89AB-CDEF-0123-456789ABCDEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2345678-89AB-CDEF-0123-456789ABCDEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2345678-89AB-CDEF-0123-456789ABCDEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2345678-89AB-CDEF-0123-456789ABCDEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
